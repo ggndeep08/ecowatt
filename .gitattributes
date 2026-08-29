@@ -1,0 +1,17 @@
+# Exclude HTML and CSS files anywhere in the repository
+**/*.html linguist-detectable=false
+**/*.htm linguist-detectable=false
+**/*.css linguist-detectable=false
+**/*.scss linguist-detectable=false
+*.html linguist-detectable=false
+*.css linguist-detectable=false
+
+# Exclude vendor/build directories
+styles/** linguist-vendored
+css/** linguist-vendored
+assets/** linguist-vendored
+vendor/** linguist-vendored
+
+# Force JavaScript detection
+**/*.js linguist-detectable=true
+**/*.js linguist-language=JavaScript
